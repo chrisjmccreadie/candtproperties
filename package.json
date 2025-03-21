@@ -1,0 +1,18 @@
+{
+  "name": "jamstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "gray-matter": "^4.0.3",
+    "http-server": "^14.1.1",
+    "nunjucks": "^3.2.4",
+    "superagent": "^9.0.2"
+  }
+}
