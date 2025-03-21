@@ -24,22 +24,18 @@ const getData = async (env, theUrl) => {
 module.exports = async (env) => {
   let apiData = [];
   let tempData;
-  let workData = [];
+  let propertyData = [];
 
-  /*
-  //get the work
-  tempData = await getData(env, `${env.CMSURL}\work`);
+  //get the properties
+  tempData = await getData(env, `${env.CMSURL}\properties`);
   tempData.data.forEach((item) => {
     //add to the array
-    workData.push(item);
+    propertyData.push(item);
   });
-  */
-
   // Assign categorized data to apiData
-  apiData.work = workData;
+  apiData.properties = propertyData;
   //debug
   //console.log(apiData);
-
   // api data to return
   return {
     apiData,

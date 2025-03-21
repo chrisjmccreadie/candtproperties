@@ -14,7 +14,7 @@ const envConfigs = {
   production: {
     ...commonConfig,
     ENVIRONMENT: "production",
-    CMSURL: "https://cms.orbitlabs.xyz/api/v1/",
+    CMSURL: "https://cms.candtproperties.com/api/v1/",
   },
 };
 
