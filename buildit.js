@@ -101,6 +101,9 @@ function processTemplates() {
       for (let i = 0; i < totalPages; i++) {
         const pageData = dataArray.slice(i * size, (i + 1) * size);
         for (const pageItem of pageData) {
+          //Skip rendering if pageName is 'index' to avoid unwanted /root/index.html
+          if (pageItem.pageName === "index") continue;
+
           const permalink = nunjucks.renderString(permalinkTemplate, {
             [alias]: pageItem,
           });
